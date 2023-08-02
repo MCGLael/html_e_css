@@ -2,11 +2,54 @@
     margin: 0px;
     padding: 0px;
 }
-main,body{
+html,body{
     width: 100vw;
     height: 100vh;
     background-color: darkcyan;
 }
+body{
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
 main{
+    position: relative;
     height: 100vh;
+}
+#telefone{
+
+    position: absolute;
+    height: 625px;
+    width: 311px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  url(imagens/frame-iphone.png) no-repeat;
+    
+}
+#tela{
+    position: relative;
+    width: 265px;
+    height: 470px;
+    top: 82px;
+    left: 23px;
+}
+section#links{
+    text-align: right;
+}
+section#links > a > img{
+    border-radius: 50%;
+    height: 50px;
+    margin: 2px;
+    box-shadow: 2px 2px 2px black;  
+    box-sizing: border-box;
+}
+section#links > a > img:hover{
+    border: 3px solid rgba(245, 245, 220, 0.651);
+    box-shadow: 5px 5px 5px black;
+    transform: translate(-5px, -2px);
+    transition: .4s;
 }
