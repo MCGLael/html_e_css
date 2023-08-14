@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="enviar.php">
+        <fieldset>
+        <p>
+            <label for="nome">nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="name" minlength="5" maxlength="10" required>
+            
+        </p>
+        <p>
+            <label for="nome">Senha</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="name" minlength="5" maxlength="10">
+            
+        </p>
+        <p>
+            <label for="nota">Nota</label>
+            <input type="number" step="0.5" min="0" max="10" required>
+        </p>
+        <p>
+            <label for="mes">Data</label>
+            <p><input type="month" required></p>
+            <p><label for="Dia"></label></p>
+            <p><input type="date" name="data" id="data"></p>
+            <p><input type="time" name="hora" id="hora"></p>
+        </p>
+        <p>
+            <label for="numero">Numero</label>
+                <input type="tel" name="numero" id="numero" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+
+            
+        </p>
+        <p>
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+
+            
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </fieldset>
+    </form>
+</body>
+</html>
